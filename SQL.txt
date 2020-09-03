@@ -1,0 +1,10 @@
+create   table   event
+(
+EventName text(25) with COMPRESSION not null,
+EventType text(25) with compression not null,
+HappenTime datetime not null,
+Millisecond integer not null,
+Param text(50) not null,
+CONSTRAINT CK_CH_Milli Check([Millisecond]>-1 and [Millisecond]<1000),
+CONSTRAINT PK_ID Primary Key (EventName,EventType,HappenTime,Millisecond)
+);

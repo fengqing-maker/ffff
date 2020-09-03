@@ -1,0 +1,239 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SID_2FY - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SID_2FY.res" /d "_NDEBUG" "D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\SID_2FY.rc"" 
+Creating temporary file "C:\Users\John\AppData\Local\Temp\RSP3817.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "_NDEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /FR"Release/" /Fp"Release/SID_2FY.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\Languge\LanguageManger.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AdoDatabase.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AdoRecordset.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AnalogData.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ButtonTabCtrl.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ComService.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\comSocket.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\CoolTabCtrl.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\CreateProjectDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\CurvePrintSet.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\CurveView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\CustomFileDialog.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\CustomizeWareSetDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\DefineScale.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\DigitalData.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\dMessageBox.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\DownloadSetDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\EventProgressDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\EventView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\excel.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\FileInfoDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\Frame.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\FrequencyAndAngle.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\hangePswDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\InfoDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\InPlaceEdit.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\MainFrm.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\Md5Class.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\MltiTree.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\MyView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\NetSocket.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ParaView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\PreView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ProjectData.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ProtectData.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\PWDDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\RealDataView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\RealMonitorView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\scbarg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\SetIP.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\SetProjectDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\SID_2FY.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\SID_2FYDoc.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\sizecbar.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\StatusBarEx.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\TestToolTip.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ToolBarEx.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\ToolTipListCtrl.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\TreeCtrlEx.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\UDPNetWork.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\UniteCurvDlg.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\USBMidWare.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\USBSocket.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\WareDataSubItem.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\WareEventData.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\WareEventList.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\WareFileData.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\WareView.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\XComboList.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\XHeaderCtrl.cpp"
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\XListCtrl.cpp"
+]
+Creating command line "cl.exe @C:\Users\John\AppData\Local\Temp\RSP3817.tmp" 
+Creating temporary file "C:\Users\John\AppData\Local\Temp\RSP3818.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "_NDEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /FR"Release/" /Fp"Release/SID_2FY.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\John\AppData\Local\Temp\RSP3818.tmp" 
+Creating temporary file "C:\Users\John\AppData\Local\Temp\RSP3819.tmp" with contents
+[
+ws2_32.lib midSerial.lib /nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:no /pdb:"Release/SID-2FY_V1.14.pdb" /machine:I386 /out:"Release/SID-2FY_V1.14.exe" 
+".\Release\LanguageManger.obj"
+".\Release\AdoDatabase.obj"
+".\Release\AdoRecordset.obj"
+".\Release\AnalogData.obj"
+".\Release\ButtonTabCtrl.obj"
+".\Release\ComService.obj"
+".\Release\comSocket.obj"
+".\Release\CoolTabCtrl.obj"
+".\Release\CreateProjectDlg.obj"
+".\Release\CurvePrintSet.obj"
+".\Release\CurveView.obj"
+".\Release\CustomFileDialog.obj"
+".\Release\CustomizeWareSetDlg.obj"
+".\Release\DefineScale.obj"
+".\Release\DigitalData.obj"
+".\Release\dMessageBox.obj"
+".\Release\DownloadSetDlg.obj"
+".\Release\EventProgressDlg.obj"
+".\Release\EventView.obj"
+".\Release\excel.obj"
+".\Release\FileInfoDlg.obj"
+".\Release\Frame.obj"
+".\Release\FrequencyAndAngle.obj"
+".\Release\hangePswDlg.obj"
+".\Release\InfoDlg.obj"
+".\Release\InPlaceEdit.obj"
+".\Release\MainFrm.obj"
+".\Release\Md5Class.obj"
+".\Release\MltiTree.obj"
+".\Release\MyView.obj"
+".\Release\NetSocket.obj"
+".\Release\ParaView.obj"
+".\Release\PreView.obj"
+".\Release\ProjectData.obj"
+".\Release\ProtectData.obj"
+".\Release\PWDDlg.obj"
+".\Release\RealDataView.obj"
+".\Release\RealMonitorView.obj"
+".\Release\scbarg.obj"
+".\Release\SetIP.obj"
+".\Release\SetProjectDlg.obj"
+".\Release\SID_2FY.obj"
+".\Release\SID_2FYDoc.obj"
+".\Release\sizecbar.obj"
+".\Release\StatusBarEx.obj"
+".\Release\StdAfx.obj"
+".\Release\TestToolTip.obj"
+".\Release\ToolBarEx.obj"
+".\Release\ToolTipListCtrl.obj"
+".\Release\TreeCtrlEx.obj"
+".\Release\UDPNetWork.obj"
+".\Release\UniteCurvDlg.obj"
+".\Release\USBMidWare.obj"
+".\Release\USBSocket.obj"
+".\Release\WareDataSubItem.obj"
+".\Release\WareEventData.obj"
+".\Release\WareEventList.obj"
+".\Release\WareFileData.obj"
+".\Release\WareView.obj"
+".\Release\XComboList.obj"
+".\Release\XHeaderCtrl.obj"
+".\Release\XListCtrl.obj"
+".\Release\SID_2FY.res"
+]
+Creating command line "link.exe @C:\Users\John\AppData\Local\Temp\RSP3819.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+d:\sid-software\高级软件\source\sid-2fy高级软件归档\sid_2fy\release\Msado15.tlh(409) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+d:\sid-software\高级软件\source\sid-2fy高级软件归档\sid_2fy\release\Msadox.tlh(1203) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AdoDatabase.h(139) : warning C4800: 'const unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AdoRecordset.h(37) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AdoRecordset.h(38) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+Compiling...
+LanguageManger.cpp
+AdoDatabase.cpp
+AdoRecordset.cpp
+AnalogData.cpp
+D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\AnalogData.cpp(498) : warning C4101: 're' : unreferenced local variable
+ButtonTabCtrl.cpp
+ComService.cpp
+comSocket.cpp
+CoolTabCtrl.cpp
+CreateProjectDlg.cpp
+CurvePrintSet.cpp
+CurveView.cpp
+CustomFileDialog.cpp
+CustomizeWareSetDlg.cpp
+DefineScale.cpp
+DigitalData.cpp
+dMessageBox.cpp
+DownloadSetDlg.cpp
+EventProgressDlg.cpp
+EventView.cpp
+excel.cpp
+Generating Code...
+Compiling...
+FileInfoDlg.cpp
+Frame.cpp
+FrequencyAndAngle.cpp
+hangePswDlg.cpp
+InfoDlg.cpp
+InPlaceEdit.cpp
+MainFrm.cpp
+D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\MainFrm.cpp(1061) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+D:\SID-Software\高级软件\Source\SID-2FY高级软件归档\SID_2FY\MainFrm.cpp(2248) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Md5Class.cpp
+MltiTree.cpp
+MyView.cpp
+NetSocket.cpp
+ParaView.cpp
+PreView.cpp
+ProjectData.cpp
+ProtectData.cpp
+PWDDlg.cpp
+RealDataView.cpp
+RealMonitorView.cpp
+scbarg.cpp
+SetIP.cpp
+Generating Code...
+Compiling...
+SetProjectDlg.cpp
+SID_2FY.cpp
+SID_2FYDoc.cpp
+sizecbar.cpp
+StatusBarEx.cpp
+TestToolTip.cpp
+ToolBarEx.cpp
+ToolTipListCtrl.cpp
+TreeCtrlEx.cpp
+UDPNetWork.cpp
+UniteCurvDlg.cpp
+USBMidWare.cpp
+USBSocket.cpp
+WareDataSubItem.cpp
+WareEventData.cpp
+WareEventList.cpp
+WareFileData.cpp
+WareView.cpp
+XComboList.cpp
+XHeaderCtrl.cpp
+Generating Code...
+Compiling...
+XListCtrl.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SID-2FY_V1.14.exe - 0 error(s), 8 warning(s)
+</pre>
+</body>
+</html>

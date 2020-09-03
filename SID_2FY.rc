@@ -1,0 +1,2535 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SID_2FY.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon2.ico"
+IDR_MY40BSTYPE          ICON    DISCARDABLE     "res\\SID_2FYDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_DEVICE              ICON    DISCARDABLE     "res\\device.ico"
+IDI_EVENT               ICON    DISCARDABLE     "res\\event.ico"
+IDI_WARE_FOLDER         ICON    DISCARDABLE     "res\\wareFiles.ico"
+IDI_PARA                ICON    DISCARDABLE     "res\\para.ico"
+IDI_REAL                ICON    DISCARDABLE     "res\\realData.ico"
+IDI_WARE_FILE           ICON    DISCARDABLE     "res\\ware.ico"
+IDI_ARROW_DOWN          ICON    DISCARDABLE     "res\\arrow_down.ico"
+IDI_ARROW_UP            ICON    DISCARDABLE     "res\\arrow_UP.ico"
+IDI_FOLDER              ICON    DISCARDABLE     "res\\folder.ico"
+IDI_REAL_MONITOR        ICON    DISCARDABLE     "res\\realClock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_CHECKBOXES          BITMAP  MOVEABLE PURE   "res\\checkboxes.bmp"
+IDB_ENABLE              BITMAP  MOVEABLE PURE   "res\\all.bmp"
+IDB_DISABLE             BITMAP  MOVEABLE PURE   "res\\all_gray.bmp"
+IDR_BIG_TOOLBAR         BITMAP  MOVEABLE PURE   "res\\big_tool.bmp"
+IDR_MAINTOOL            BITMAP  MOVEABLE PURE   "res\\toolbar1.bmp"
+IDB_MAINTOOLBAR         BITMAP  MOVEABLE PURE   "res\\mainTool.bmp"
+IDB_DISABLE_MAINTOOLBAR BITMAP  MOVEABLE PURE   "res\\gray_mainTool.bmp"
+IDB_BITMAP_LOGO         BITMAP  MOVEABLE PURE   "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_FILE_NEW
+END
+
+IDR_BIG_TOOLBAR TOOLBAR MOVEABLE PURE  48, 48
+BEGIN
+    BUTTON      ID_CURVE_H_BIGGER
+    BUTTON      ID_CURVE_H_SMALLER
+    BUTTON      ID_CURVE_V_BIGGER
+    BUTTON      ID_CURVE_V_SMALLER
+END
+
+IDR_MAINTOOL TOOLBAR MOVEABLE PURE  48, 48
+BEGIN
+    BUTTON      IDC_NEW_PROJECT
+    BUTTON      ID_OPEN_FILE
+    BUTTON      ID_GET_WARE_FILE
+    BUTTON      IDC_RESTART
+    BUTTON      IDC_START_SYNC
+    BUTTON      IDM_UPDATE_PARA
+    BUTTON      IDC_PROJECT_WND
+    BUTTON      IDM_RIGHT_BAR
+    BUTTON      IDC_INFO_WND
+    BUTTON      ID_CONNECT
+    BUTTON      ID_DISCONNECT
+END
+
+IDR_TOOLBAR TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      TBTN_TOP
+    BUTTON      TBTN_PREVIOUS
+    SEPARATOR
+    BUTTON      TBTN_GOTO
+    SEPARATOR
+    BUTTON      TBTN_NEXT
+    BUTTON      TBTN_LAST
+    SEPARATOR
+    BUTTON      TBTN_EXIT
+    SEPARATOR
+    BUTTON      TBTN_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建工程(&N)",                IDC_NEW_PROJECT
+        MENUITEM "打开工程(&O)",                IDC_OPEN_PROJECT
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "事件"
+    BEGIN
+        MENUITEM "查看事件信息",                ID_SHOW_EVENT
+        MENUITEM "提取事件",                    ID_GET_EVENT
+        MENUITEM "导入事件文件",                ID_IN_EVENT_FILE
+        MENUITEM "事件导出至Excel",             ID_OUT_EVENT
+    END
+    POPUP "录波"
+    BEGIN
+        MENUITEM "提取录波文件",                ID_GET_WARE_FILE
+        MENUITEM "打开录波文件",                ID_OPEN_WARE_FILE
+    END
+    POPUP "密码管理"
+    BEGIN
+        MENUITEM "修改软件密码",                ID_MODIFY_PSW
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工程视图",                    IDC_PROJECT_WND, CHECKED
+        MENUITEM "信息视图",                    IDC_INFO_WND, CHECKED
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR, CHECKED
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "设置曲线放缩比例", CHECKED
+    BEGIN
+        MENUITEM "比例：1",                     ID_MULTI_1
+        MENUITEM "比例：2",                     ID_MULTI_2
+        MENUITEM "比例：4",                     ID_MULTI_4
+        MENUITEM "自定义",                      ID_DEFINE_SELF
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 SID-2FY高级软件(&A)...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SID-2FY 高级软件"
+FONT 10, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,24,20,20
+    LTEXT           "SID-2FY 高级软件 Ver 1.14",IDC_STATIC,40,17,99,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008-2020 深圳市国立智能电力科技有限公司 Corporation. All rights reserved.",
+                    IDC_STATIC,40,36,180,17
+    DEFPUSHBUTTON   "确定",IDOK,181,13,50,14,WS_GROUP
+END
+
+IDD_EVENT DIALOG DISCARDABLE  0, 0, 386, 377
+STYLE WS_CHILD
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_EVENT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,71,371,291
+    LTEXT           "事件类型:",IDC_STATIC,14,21,37,8
+    COMBOBOX        IDC_EVENT_COMBO,57,19,58,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "起始时间：",IDC_STATIC,14,39,41,8
+    LTEXT           "终止时间：",IDC_STATIC,130,39,41,8
+    LTEXT           "事件名称：",IDC_STATIC,130,21,41,8
+    EDITTEXT        IDC_EVENT_NAME_EDIT,175,17,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "搜索",IDC_SORT_BTN,243,35,50,14
+    CONTROL         "DateTimePicker1",IDC_START_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,58,36,59,12
+    CONTROL         "DateTimePicker2",IDC_END_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,175,36,61,12
+    PUSHBUTTON      "导入事件文件",IDC_INPUT_EVENT,317,36,50,14
+    PUSHBUTTON      "提取装置事件",IDC_GET_EVENT,317,18,50,14
+    GROUPBOX        "事件搜索",IDC_STATIC,7,7,293,47
+    GROUPBOX        "事件获取",IDC_STATIC,306,7,72,47,BS_CENTER
+END
+
+IDD_WARE DIALOG DISCARDABLE  0, 0, 443, 294
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+END
+
+IDD_DOWNLOAD_WARE_FILE DIALOG DISCARDABLE  0, 0, 358, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提取录波文件"
+FONT 12, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "提取",IDOK,221,161,50,14
+    PUSHBUTTON      "取消",IDCANCEL,293,161,50,14
+    CONTROL         "List1",IDC_WARE_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,10,344,149
+END
+
+IDD_CUSTOMIZE_WARE_SET DIALOGEX 0, 0, 289, 227
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义录波显示设置"
+FONT 12, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "显示",IDOK,54,193,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,193,50,14
+    COMBOBOX        IDC_VALUE_TYPE,23,15,55,12,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Tree1",IDC_FILE_DATA,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,20,48,85,120,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "Tree2",IDC_DISPLAY_DATA,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,155,48,85,120,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "文件中的通道信息：",IDC_WARE_FILE_CHANNEL_INFO,20,33,73,
+                    8
+    LTEXT           "要显示的通道信息：",IDC_DIS_CHANNEL_INFO,155,33,73,8
+    PUSHBUTTON      ">>",IDC_ADD_BTN,108,68,45,14
+    PUSHBUTTON      "<<",IDC_SUB_BTN,108,116,45,14
+    PUSHBUTTON      "指定通道>>",IDC_APPOINT_ADD_BTN,108,92,45,14
+    PUSHBUTTON      "∧",IDC_MOVE_UP_BTN,249,68,29,14
+    PUSHBUTTON      "∨",IDC_MOVE_DOWN_BTN,249,116,29,14
+END
+
+IDD_CREATE_PROJECT_DLG DIALOG DISCARDABLE  0, 0, 279, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建与装置相关的工程文件"
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List3",IDC_DEVICE_TYPE,"SysListView32",LVS_SMALLICON | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,22,23,98,132
+    PUSHBUTTON      "创建",IDOK,145,151,50,14
+    PUSHBUTTON      "取消",IDCANCEL,210,151,50,14
+    GROUPBOX        "选择装置类型",IDC_STATIC,14,9,116,156
+    LTEXT           "通信方式：",IDC_STATIC,133,25,41,8
+    LTEXT           "工程名：",IDC_STATIC,142,54,33,8
+    EDITTEXT        IDC_PROJECT_NAME,175,52,77,15,ES_AUTOHSCROLL
+    LTEXT           "位置：",IDC_STATIC,149,83,25,8
+    EDITTEXT        IDC_LOCATION,175,81,78,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_PATH_BTN,260,81,10,14
+    CONTROL         "创建时连接装置",IDC_CREATE_LINK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,150,128,72,8
+    COMBOBOX        IDC_LINKTYPE,175,24,51,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SET_PROJECT_DLG DIALOG DISCARDABLE  0, 0, 259, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工程设置"
+FONT 12, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "设置",IDOK,60,125,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,125,50,14
+    LTEXT           "工程名：",IDC_STATIC,47,15,33,8
+    EDITTEXT        IDC_PROJECT_NAME,87,12,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "装置类型：",IDC_STATIC,39,43,41,8
+    EDITTEXT        IDC_PROJECT_TYPE,87,40,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "事件Access文件：",IDC_STATIC,16,69,64,8
+    EDITTEXT        IDC_DB_FILENAME,87,67,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "连接方式：",IDC_STATIC,41,93,42,8
+    COMBOBOX        IDC_COMBO_LINK,87,91,55,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_REAL_DATA_VIEW DIALOG DISCARDABLE  0, 0, 389, 348
+STYLE WS_CHILD
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_REAL_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,25,375,316
+    LTEXT           "实测类型：",IDC_STATIC,15,12,41,8
+    COMBOBOX        IDC_REAL_DATA_TYPE,61,10,53,38,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PARA_VIEW DIALOG DISCARDABLE  0, 0, 395, 341
+STYLE WS_CHILD
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_PARA_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,56,381,278
+    PUSHBUTTON      "设置定值",IDC_SET_PARA_BTN,304,11,70,14
+    LTEXT           "定值类型：",IDC_STATIC,15,40,41,8
+    COMBOBOX        IDC_PARA_TYPE,60,38,65,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "通道号：",IDC_STATIC,22,14,33,8
+    COMBOBOX        IDC_PARA_AREA,60,12,65,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "导入定值文件",IDC_READ_PARA_FILE,137,37,70,14
+    PUSHBUTTON      "读取装置定值",IDC_READ_PARA,137,11,70,14
+    PUSHBUTTON      "恢复出厂设置",IDC_DEVICE_RESET,220,36,70,14
+    COMBOBOX        IDC_COMBO_SETAREA,221,12,68,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 234, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "事件提取进度"
+FONT 10, "System"
+BEGIN
+    LTEXT           "类型信息：",IDC_TYPE_INFO,20,15,163,8
+    CONTROL         "Progress1",IDC_EVENT_PROGRESS,"msctls_progress32",
+                    PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,20,40,195,14
+END
+
+IDD_INFO_DLG DIALOG DISCARDABLE  0, 0, 239, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "覆盖",IDYES,15,65,50,14
+    PUSHBUTTON      "另存为",IDNO,95,65,50,14
+    PUSHBUTTON      "取消",IDCANCEL,175,65,50,14
+    LTEXT           "",IDC_INFO,15,20,200,20
+END
+
+IDD_FILE_INFO_DLG DIALOG DISCARDABLE  0, 0, 314, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,255,140,50,14
+    PUSHBUTTON      "取消",IDCANCEL,255,165,50,14
+    LTEXT           "文件地址：",IDC_STATIC,10,14,41,8
+    EDITTEXT        IDC_FOLDER_PATH,65,10,170,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "浏览",IDC_SORT_FOLDER_BTN,245,10,30,14,WS_DISABLED
+    CONTROL         "List1",IDC_FILE_LIST,"SysListView32",LVS_SMALLICON | 
+                    WS_BORDER | WS_TABSTOP,10,40,270,85
+    LTEXT           "文件名：",IDC_STATIC,15,145,33,8
+    LTEXT           "",IDC_FILE_HEAD,46,146,79,8
+    EDITTEXT        IDC_FILE_NAME,130,141,26,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_FILE_TAIL,160,146,85,8
+    LTEXT           "文件类型：",IDC_STATIC,15,165,41,8
+    COMBOBOX        IDC_FILE_TYPE,70,162,110,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FORMVIEW DIALOG DISCARDABLE  0, 0, 561, 401
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,35,65,485,285
+END
+
+IDD_PRINT_SET DIALOG DISCARDABLE  0, 0, 297, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打印设置"
+FONT 12, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "设置",IDOK,76,194,50,14
+    PUSHBUTTON      "取消",IDCANCEL,176,194,50,14
+    LTEXT           "起始打印时间[ms]：",IDC_STATIC,137,66,72,8
+    PUSHBUTTON      "打印通道设置",IDC_PRINT_CHANNEL_BTN,24,14,50,14
+    LTEXT           "终止打印时间[ms]：",IDC_STATIC,136,89,73,8
+    LTEXT           "测量值的时间位置[ms]：",IDC_STATIC,120,112,89,8
+    CONTROL         "录波文件概述",IDC_FILE_INFO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,146,64,10
+    GROUPBOX        "附加信息设置",IDC_STATIC,120,131,156,48
+    CONTROL         "通道信息",IDC_CHANNEL_INFO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,203,146,48,10
+    CONTROL         "保护定值信息",IDC_PARA_IFNO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,163,64,10
+    EDITTEXT        IDC_START_TIME,219,63,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_END_TIME,219,87,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_TEST_TIME,219,111,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PRINT_CHANNEL,25,40,79,142,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "绘图方式：",IDC_STATIC,168,20,41,8
+    COMBOBOX        IDC_DRAW_STYLE_COMBO,219,19,48,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "打印颜色：",IDC_STATIC,168,43,41,8
+    COMBOBOX        IDC_COLOR_STYLE,219,41,48,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "页码",IDC_PAGE_NUM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,203,163,32,10
+END
+
+IDD_MY_PREVIEWDIALOG DIALOG DISCARDABLE  0, 0, 398, 36
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Print",AFX_ID_PREVIEW_PRINT,0,0,43,16
+    PUSHBUTTON      "Next Page",AFX_ID_PREVIEW_NEXT,44,0,43,16
+    PUSHBUTTON      "Prev Page",AFX_ID_PREVIEW_PREV,88,0,43,16
+    PUSHBUTTON      "One Page",AFX_ID_PREVIEW_NUMPAGE,132,0,43,16
+    PUSHBUTTON      "Three Page",AFX_ID_PREVIEW_THREEPAGE,176,0,43,16
+    PUSHBUTTON      "Zoom In",AFX_ID_PREVIEW_ZOOMIN,264,0,43,16
+    PUSHBUTTON      "Zoom out",AFX_ID_PREVIEW_ZOOMOUT,308,0,43,16
+    PUSHBUTTON      "Close",AFX_ID_PREVIEW_CLOSE,352,0,43,16
+    PUSHBUTTON      "Ten page",AFX_ID_PREVIEW_SIXPAGE,220,0,43,16
+    EDITTEXT        IDC_FINDNUMBER,53,19,40,14
+    PUSHBUTTON      "Find",AFX_ID_PREVIEW_FIND,97,19,43,16
+    LTEXT           "Page Number:",IDC_STATIC,3,22,49,8
+END
+
+IDD_PASSWORD DIALOG DISCARDABLE  0, 0, 164, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入密码"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,18,47,50,14
+    PUSHBUTTON      "取消",IDCANCEL,95,47,50,14
+    EDITTEXT        IDC_PSW,58,19,62,12,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "密码：",IDC_STATIC,30,21,27,11
+END
+
+IDD_MODIFY_PSW DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,28,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,73,50,14
+    RTEXT           "原密码：",IDC_STATIC,44,16,34,13
+    RTEXT           "修改后密码：",IDC_STATIC,27,31,51,13
+    RTEXT           "确认密码：",IDC_STATIC,28,46,50,13
+    EDITTEXT        IDC_ORIGINAL_PSW,78,15,68,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODIFY_PSW,78,30,68,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODIFY_CONFIRM,78,45,68,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_UNITE_CURVE DIALOG DISCARDABLE  0, 0, 210, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请选择将要合并的录波文件"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "合    并",IDOK,34,94,50,14
+    PUSHBUTTON      "取    消",IDCANCEL,127,94,50,14
+    CONTROL         "List1",IDC_CURVE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,
+                    7,29,196,61
+    LTEXT           "将要合并的录波文件:",IDC_STATIC,7,7,81,8
+    EDITTEXT        IDC_FILE_UNITED,7,16,154,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "系统默认",IDC_AUTO_SELECT,166,15,37,14
+END
+
+IDD_IP_SET DIALOG DISCARDABLE  0, 0, 146, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入设备IP地址"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,20,47,44,13
+    PUSHBUTTON      "取消",IDCANCEL,84,47,42,13
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,
+                    23,19,100,14
+END
+
+IDD_DEFINE_SCALE DIALOG DISCARDABLE  0, 0, 149, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置曲线放缩比例"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确 认",IDOK,22,37,44,12
+    DEFPUSHBUTTON   "取 消",IDCANCEL,85,37,44,12
+    COMBOBOX        IDC_COMBO_SCALE,63,13,58,86,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "放缩比例：",IDC_STATIC,17,15,41,8
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "深圳市国立智能电力科技有限公司\0"
+            VALUE "FileDescription", "SID-2FY Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 2\0"
+            VALUE "InternalName", "SID-2FY\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "OriginalFilename", "SID-2FY.EXE\0"
+            VALUE "ProductName", "同期装置高级软件 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 2\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_EVENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_WARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_DOWNLOAD_WARE_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_CUSTOMIZE_WARE_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_CREATE_PROJECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        VERTGUIDE, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_SET_PROJECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_REAL_DATA_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 341
+    END
+
+    IDD_PARA_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_INFO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_FILE_INFO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 554
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDD_PRINT_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_MODIFY_PSW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_UNITE_CURVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_IP_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+        HORZGUIDE, 47
+    END
+
+    IDD_DEFINE_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// LANGUGE
+//
+
+IDR_LANG_CH             LANGUGE MOVEABLE PURE   "res\\lang_ch.bin"
+IDR_LANG_ENG            LANGUGE MOVEABLE PURE   "res\\lang_eng.bin"
+IDR_SETTING             LANGUGE MOVEABLE PURE   "res\\setting.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SID_2FY\n无工程\nMy40Bs\n\n\nMySID_2FY.Document\nMy40Bs Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "高级软件"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDS_INDICATOR_TIME      "时间差"
+    IDS_INDICATOR_H_BIGGER  "水平放大：pageUp"
+    IDS_INDICATOR_SMALLER   "缩小：pageDown"
+    IDS_SUB_TIME            "时间信息"
+    IDS_ERROR_OLE           "OLE初始化出错"
+    IDS_ERROR_PWDFILE       "密钥文件：%s打开失败！\r\n请检查是否有别的程序本在使用此文件"
+    IDS_STRING_PWDW         "文件：%s\r\n与装置的密钥文件同名，但却并非本装置的密钥文件，\r\n所以本软件获取密钥失败，无法继续运行\r\n建议解决方案：\r\n\t1. 将本上位机软件单独放入一个目录下再运行\r\n\t2. 删除文件：%s （如果此文件不重要）"
+    IDS_STRING_PWDCF        "创建密钥文件失败！"
+    IDS_WRITE_PWDF          "写密钥文件失败!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GET_EVENT            "提取事件信息\n提取事件信息"
+    ID_GET_WARE_FILE        "提取录波文件\n提取录波文件"
+    IDC_NEW_PROJECT         "创建工程文件\n创建工程"
+    IDC_PROJECT_WND         "显示＆隐藏工程视图\n显示＆隐藏工程视图"
+    IDC_INFO_WND            "显示＆隐藏录波文件信息视图\n显示＆隐藏录波文件信息视图"
+    ID_CURVE_H_BIGGER       "录波曲线水平放大\n水平放大"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CURVE_H_SMALLER      "录波曲线水平缩小\n水平缩小"
+    ID_CURVE_V_BIGGER       "录波曲线垂直放大\n垂直放大"
+    ID_CURVE_V_SMALLER      "录波曲线垂直缩小\n垂直缩小"
+    ID_OPEN_FILE            "打开工程或录波文件\n打开工程或录波文件"
+    IDM_PRINT               "打印\n打印"
+    ID_VIEW_WARE_TOOL_BAR   "显示&隐藏放缩工具栏"
+    IDC_RESTART             "装置复位\n装置复位"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_START_SYNC          "启动同期\n启动同期"
+    IDC_STOP_SYNC           "紧急中止同期\n紧急中止同期"
+    IDM_RIGHT_BAR           "显示＆隐藏定值视图\n显示＆隐藏定值视图"
+    ID_CONNECT              "连接装置\n连接装置"
+    ID_DISCONNECT           "断开连接\n断开连接"
+    IDM_UPDATE_PARA         "更新同期参数\n更新同期参数"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_FILENAME        "文件名"
+    IDS_STR_FILESRC         "文件来源"
+    IDS_RECORDTYPE          "录波启动类型"
+    IDS_SIMPLE_CYCLE        "采样周期"
+    IDS_FIRST_SAMTIME       "第一个采样点时间"
+    IDS_RECORD_TIME         "录波启动时间"
+    IDS_STR_WAVECURVE       "波形曲线"
+    IDS_PAGE_INFO           "第%d页/共%d页"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CURVE_SET           "曲线显示设置"
+    IDS_DIS_COLOUR          "彩色显示"
+    IDS_DIS_BACKWRITHE      "黑白显示"
+    IDS_ANGULAR_DIF         "相角差"
+    IDS_STR_OK              "确定"
+    IDS_STR_CANCEL          "取消"
+    IDS_STR_RETRY           "重试"
+    IDS_STR_ABORT           "终止"
+    IDS_STR_IGNORE          "忽略"
+    IDS_STR_YES             "是"
+    IDS_STR_NO              "否"
+    IDS_STR_SCHEME          "方案"
+    IDS_STR_VERSION         "程序版本"
+    IDS_STR_LINE            "进线"
+    IDS_STR_LOWSIDE         "低压侧"
+    IDS_BOTTOM_FIRST_F2     "录波文件信息：\r\n文件来源：%s\r\n录波启动类型：%s\r\n采样总周波数：%.1f\r\n第一个采样点时间：%s.%d\r\n录波启动时间：%s.%d\r\n返回段采样启动时间：%s.%d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DELFILE_ERROR       "删除录波文件出错"
+    IDS_DELWAVE_INFO2       "您确定删除所有选中的录波文件出工程录波文件列表吗"
+    IDS_WAREFILE_INFO3      "录波文件长度超过本软件所能解析的长度"
+    IDS_WAREFILE_INFO4      "录波文件不存在！系统将删除从工程中删除此录波文件项"
+    IDS_OPEN_WAVEF          "此录波文件正在被别的程序使用，无法打开"
+    IDS_SPLIT_ERROR         "解析录波文件失败，也许是录波文件已经破损！"
+    IDS_FILE_BROKEN         "此录波文件已破损，无法打开!"
+    IDS_SEL_UNITFILE        "请选择需要合并的波形文件"
+    IDS_STR_UNITEERROR      "波形文件合并失败"
+    IDS_STR_UNITS           "波形文件合并合并成功！"
+    IDS_STR_FILEEX          "录波文件已存在"
+    IDS_STR_OPENE           "打开录波文件失败"
+    IDS_STR_CPE             "录波文件拷备入工程文件出错"
+    IDS_STR_DEVICENS        "本上位机软件不支持此类工程！"
+    IDS_STR_PRJINFO         "请先打开或创建工程文件，无工程文件时禁止打开录波文件"
+    IDS_MAX_FILENUM         "工程中最多允许%d个录波文件，现已满%d个，请先删除不重要的录波文件再行打开！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ANALYSE_INFO        "此录波文件没有分析设置，不需要进行分析！"
+    IDS_OPENFILE_INFO       "此录波文件已经在工程文件中打开，无需重新打开！"
+    IDS_EXPORTPARA_INFO     "导出保护定值数据到Excel文件失败"
+    IDS_EXPORTPARA          "定值导出"
+    IDS_EXPORTCHANALE       "通道信息导出"
+    IDS_EXPORTDATA_INFO     "导出实测数据到Excel文件失败"
+    IDS_EXPORTDATA          "导出实测数据"
+    IDS_EXPORTDATA_INFO2    "已经将实测数据导出至%s文件中"
+    IDS_EXPORTCOMTRADE_ERROR "导出Comtrade文件失败"
+    IDS_EXPORTCOMTRADE_INFO "导出Comtrade文件成功"
+    IDS_PWDC_INFO           "密码修改成功"
+    IDS_PWDC_ERROR          "密码修改失败"
+    IDS_PWD_INFO2           "密码不能为空"
+    IDS_PWD_ERROR           "密码错误"
+    IDS_PWDC_INFO3          "新密码两次输入不一致，请重新输入"
+    IDS_PWDC_OLDW           "旧密码输入错误"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OPENFILE_ERROR      "打开文件失败"
+    IDS_CHANGEAREA_ERROR    "切换定值区失败"
+    IDS_SETPARA_ERROR       "设定参数定值失败"
+    IDS_SETPARA_OK          "设定参数定值成功，是否固化参数定值"
+    IDS_SOLIDIFY_INFO       "固化参数定值失败"
+    IDS_SOLIDIFY_OK         "固化参数定值成功"
+    IDS_DATABASE_CONNECT    "创建存储事件信息的数据库失败"
+    IDS_DATABASE_CREATE     "创建存储事件信息的数据库失败！"
+    IDS_PRJCREATE_ERROR     "创建工程失败"
+    IDS_WAVEFILE_BROKEN     "录波文件已经破损"
+    IDS_FILENAME_LENG       "录波文件名太长，无法打开！"
+    IDS_PRJFILE_ERROR       "访问工程文件失败！"
+    IDS_ADDFILE_PRJ         "添加录波文件至工程文件夹失败！"
+    IDS_WRITEFILE_ERROR     "写入文件内容失败，可能是磁盘空间不足"
+    IDS_DELFILE_ERROR2      "删除文件失败，可能是文件正是被别的程序打开"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONNECT_ERROR       "装置连接失败"
+    IDS_DELDIRECTORY_ERROR  "删除目录失败"
+    IDS_WAREFILE_INFO       "工程录波文件目录下不存在此录波文件，请先将其拷入工程录波文件目录下！"
+    IDS_TYPEDEVICE_UNKNOW   "装置类型未知"
+    IDS_TYPEDEVICE_INFO2    "此上位机软件无法为类型为%s的装置服务"
+    IDS_TYPEDEVICE_ERROR    "工程类型:%s与装置类型:%s的不匹配"
+    IDS_ANALYSZFILE_ERROR   "文件内容解析出错"
+    IDS_UNITEWAVE_INFO      "此文件是已合并的波形文件"
+    IDS_UNITEWAVE_INFO2     "没有符合合并条件的波形文件"
+    IDS_CREATEFILE_ERROR    "创建文件失败"
+    IDS_WRITEEFILE_ERROR    "写入录波数据失败"
+    IDS_MEMORY_ERROR        "内存不足，分配内存失败"
+    IDS_ANALOG_ERROR        "模拟量解析失败"
+    IDS_DIGIT_ERROR         "数字量解析失败！"
+    IDS_PROTECTED_ERROR     "保护定值解析失败"
+    IDS_CREATE_CONFIG       "创建配制文件失败"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CREATEBASE_FILE     "创建数据文件失败"
+    IDS_EVENT_INFO          "事件信息"
+    IDS_REAL_PARA           "实测数据"
+    IDS_WAVE_FILE           "录波文件"
+    IDS_PROTECT_PARA        "装置定值"
+    IDS_EXPORT_PARA         "导出装置定值"
+    IDS_EXPORT_WAVEPARA     "导出录波定值"
+    IDS_EXPORT_CHANALINFO   "导出通道信息"
+    IDS_PRJ_SETTING         "工程设置"
+    IDS_TEST_CONNECT        "装置连接测试"
+    IDS_PRJINFO             "工程信息"
+    IDS_BOTTOM_TITLE        "数据文件信息"
+    IDS_CHANEL_INFO         "通道信息"
+    IDS_EXPORTCHANEL_OK     "已经将通道信息成功导出到%s文件中！"
+    IDS_PARA_INFO           "定值信息:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PRO_INFO            "保护定值信息"
+    IDS_CHANNEL_NAME        "通道名"
+    IDS_CHANNEL_TYPE        "通道类型"
+    IDS_STR_CYCLE           "周波数"
+    IDS_POINT_CYCLE         "每周波采样点数"
+    IDS_PARA_TPYEANDINFO    "定值类型及相关信息"
+    IDS_PARA_NAME           "定值名称"
+    IDS_PARA_VALUE          "定值数值"
+    IDS_SHOW_WAVE           "显示波形曲线"
+    IDS_WAVE_ANALYSE        "录波分析"
+    IDS_WAVE_UNITE          "波形合并"
+    IDS_EXPORT_COMTRADE     "按Comtrade文件导出"
+    IDS_DEL_LIST            "删除文件出列表"
+    IDS_DEL_DISK            "彻底删除录波文件"
+    IDS_BOTTOM_FIRST        "录波文件信息：\r\n文件来源：%s\r\n录波启动类型：%s\r\n采样总周波数：%d\r\n第一个采样点时间：%s.%d\r\n录波启动时间：%s.%d"
+    IDS_ARARE_WAVE          "录波时装置运行在%d号定值区"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_COVER           "录波文件已经提取过，是否覆盖原录波文件"
+    IDS_STRING_TYPE         "类型"
+    IDS_ANG_CYSPOINT_ERROR  "模拟量通道周波采样点数出错(%d) !"
+    IDS_ANG_STARTPOINT_ERROR "模拟量通道采样启动段采样点数出错(%d)!"
+    IDS_ANG_AFTERPOINT_ERROR "模拟量通道采样返回段采样点数出错(%d)!"
+    IDS_ANG_TIMEDIFF_ERROR  "模拟量有效段采样时间间隔出错(%d)!"
+    IDS_ANG_ALLSTARTPOINT_ERROR "模拟量有效启动段采样点数出错(%d)!"
+    IDS_ANG_ALLAFTERPOINT_ERROR "模拟量有效返回段采样点数出错(%d)!"
+    IDS_ANG_APPOINTNUM_ERROR "模拟量指定通道数目错误 [%d] !"
+    IDS_ANG_SUBLEN_ERROR    "模拟量子项长度出错！目标长度：%d，错误长度：%d"
+    IDS_ANG_CHNUM_ERROR     "错误！模拟量第%d通道的通道号为：%d"
+    IDS_ERROR_CALDIFF       "计算角差失败"
+    IDS_NETWORK_CONN        "网络连接"
+    IDS_USB_CONN            "USB连接"
+    IDS_DVI_CONNECT_ERROR   "SID-DVI暂只支持USB连接，请选择USB连接后再创建工程!"
+    IDS_BEGINTIME_MAX       "起始时间应小于60800"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_OPENWAVE      "打开目标录波文件失败!"
+    IDS_ERROR_WRITEWF       "写目标录波文件失败!"
+    IDS_OK_WRITEVALUE       "瞬时值修改成功"
+    IDS_CREATE_INFO         "请输入工程名或工程路径"
+    IDS_PRJNAME_ERROR       "文件名不能包含以下字符：\r\n\\ / : * ? \\"" < > |"
+    IDS_CREATE_IP           "请输入装置的IP地址!"
+    IDS_DRAW_WAY1           "纵向打印"
+    IDS_DRAW_WAY2           "横向打印"
+    IDS_DRAW_COLOUR1        "黑白打印"
+    IDS_DRAW_COLOUR2        "彩色打印"
+    IDS_DRAW_START          "测量竖线必须在曲线打印部分的时间范围内"
+    IDS_PRINT_INFO          "请先设置打印曲线的参数!"
+    IDS_SEL_VALUETYPE       "请选择显示值类型!"
+    IDS_SEL_CHANNAL         "请选择要显示的通道!"
+    IDS_GET_WAVEF           "获取波形曲线失败!"
+    IDS_NAME_DIFF           "不同类型的通道的名称禁止相同!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_ANALOG          "模拟量"
+    IDS_DIGITAL_INPUT       "开入量"
+    IDS_DIGITAL_OUTPUT      "开出量"
+    IDS_FILEUSED_INFO       "%s文件正在被别的程序所使用，无法替换它"
+    IDS_ADD_FAIL            "添加%s失败"
+    IDS_EXPORTPARA_OK       "已经将保护定值数据成功导出到%s文件中"
+    IDS_EXPORTCOMTR_INFO    "Comtrade File(输入Comtrade的文件夹名)|*||"
+    IDS_ONE_VALUE           "一次值"
+    IDS_TWICE_ONE           "二次值"
+    IDS_PRINT_TITLE         "录波文件打印设置"
+    IDS_PRINT_CHANNELIFNO   "要打印的通道信息"
+    IDS_SET                 "设置"
+    IDS_BOTTOM_FIRSTNOCRC   "录波文件信息：\r\n文件来源：%s\r\n结构版本：%d\r\n方案：%d\r\n程序版本: %s \r\n录波启动类型：%s\r\n采样总周波数：%d\r\n第一个采样点时间：%s.%d\r\n录波启动时间：%s.%d"
+    IDS_HAS_NONFILE         "装置无录波文件"
+    IDS_ALL_TYPE            "所有类型"
+    IDS_SERIAL              "序号"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EVENT_NAME          "事件名称"
+    IDS_EVENT_TYPE          "事件类型"
+    IDS_TIME_HAPPEN         "发生时间"
+    IDS_EVENT_PARA          "参数"
+    IDS_DOWN_NOW            "正在提取：%s"
+    IDS_EXPORT_EVENT        "导出事件"
+    IDS_DEL_EVENT           "删除选中事件"
+    IDS_DEL_ALL             "删除所有事件"
+    IDS_SAVE_FILE           "录波文件名将为：%s，是否确定保存"
+    IDS_SET_AREA            "是否确定将定值区%d设为当前定值区？"
+    IDS_PARA_SERIAL         "定值编号(R)"
+    IDS_PARA_TYPE           "定值类型(R)"
+    IDS_PARA_DATA           "定值数据(R/W)"
+    IDS_PARA_RANGE          "定值范围(R)"
+    IDS_DATA_RANGE          "数据范围为"
+    IDS_OVERRANGE_INFO      "请输入%.3lf到%.3lf之内的数，%.3lf已经越限"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FREQUENCY           "频率量"
+    IDS_ANG_DIFF            "角差"
+    IDS_PRJ_DIR             "工程目录"""
+    IDS_PATH_INFO           """已经存在，请更换工程名或修改工程目录！"
+    IDS_UNKOWN_TYPE         "此上位机软件无法打开装置类型为%s的工程文件"
+    IDS_MAXDOWN_FILENUM     "工程中最多允许%d个录波文件，现已满%d个，请先删除不重要的录波文件再行提取"
+    IDS_REAL_DATANAME       "实测数据名称"
+    IDS_REAL_DATATYPE       "实测数据类型"
+    IDS_MEASRUE_VALUE       "测量值"
+    IDS_EXPAND_VALUE        "扩展值"
+    IDS_RECOVE_FILEINFO     "文件:%s已经存在,是否覆盖原文件"
+    IDS_FILE_EXIST          "comtrade 文件:%s已经存在"
+    IDS_MERAGE_FILE         "合并文件"
+    IDS_STR_NAME            "名  称"
+    IDS_PER_UNIT            "标么值"
+    IDS_STR_TIME            "时间"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENDTIME_MIN         "结束时间应大于60800"
+    IDS_CHANNAL_SHOW_ERROR  "通道显示错误"
+    IDS_CHANAL_NOEXIST      "第%d个指定通道:%d不存在"
+    IDS_DIGITAL_CHNUM_ERROR "数字量通道数出错[%d] !"
+    IDS_DIGIT_CYSPOINT_ERROR "数字量通道周波采样点数出错(%d) !"
+    IDS_DIGIT_STARTPOINT_ERROR "数字量通道采样启动段采样点数出错(%d)!"
+    IDS_DIGIT_AFTERPOINT_ERROR "数字通道采样返回段采样点数出错(%d)!"
+    IDS_DIGIT_TIMEDIFF_ERROR "数字量有效段采样时间间隔出错(%d)!"
+    IDS_DIGIT_ALLSTARTPOINT_ERROR "数字量有效启动段采样点数出错(%d)!"
+    IDS_DIGIT_ALLAFTERPOINT_ERROR "数字量有效返回段采样点数出错(%d)!"
+    IDS_DIGIT_APPOINTNUM_ERROR "数值量指定通道数目错误[%d] !"
+    IDS_CANCEL_SAVE         "用户取消保存"
+    IDS_CREATE_WAVE_ERROR   "创建录波文件失败"
+    IDS_DOWN_FILE_ERROR3    "提取文件出错"
+    IDS_FILE_BROKEN2        "文件破损"
+    IDS_SET_PRI_ERROR       "设置线程优先级失败"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOT_SHOWCHANANL     "请选择去除显示的通道!"
+    IDS_SEL_UPCHANANL       "请选择要上移的通道!"
+    IDS_UPCHANANL           "上移通道必须为具体的通道，不能是某一类型的通道曲线!"
+    IDS_UP_INFO             "通道'%s'为第一个通道，不能再上移"
+    IDS_MOVE_CHANANLINFO    "波形分析中，不能修改指定模拟量通道的显示顺序"
+    IDS_MOVE_INFO2          "通道'%s'的上一个是指定模拟量通道，所以不能上移！"
+    IDS_MOVE_DOWNINFO       "请选择要下移的通道!"
+    IDS_MOVEDOWN_ERROR      "下移通道必须为具体的通道，不能是某一类型的通道曲线!"
+    IDS_ERROR_CHANANL       "此录波文件中不存在本曲线，也录录波文件已经被破损"
+    IDS_MOVEDOWN_INFO1      "通道'%s'为最后一个通道，不能再下移!"
+    IDS_SHOWWAVE_INFO       "波形分析中，必须显示指定通道曲线"
+    IDS_DOWNFILE_ERROR1     "录波概览提取失败"
+    IDS_DOWNFILE_ERROR2     "提取录波文件出错"
+    IDS_DOWNFILE_INFO1      "录波文件提取完毕，完成情况见各文件“完成进度”！"
+    IDS_ADDEVENT_ERROR      "添加事件失败"
+    IDS_OPEN_DATAF          "打开数据记录失败"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WAVEDATA_INFO       "录波数据记录已删除"
+    IDS_DELEEVENT_INFO      "您确定删除所选中的事件"
+    IDS_STR_TITLE           "确认删除"
+    IDS_EPORTEVENT_ERROR    "导出事件信息到Excel文件失败"
+    IDS_EVENT_TITLE         "事件导出"
+    IDS_EXPORTEVENT_FINISH  "已经将事件信息成功导出到%s文件中"
+    IDS_DELEEVENT_INFO2     "您确定删除所有的事件?"
+    IDS_DELEEVENT_INFO3     "正在删除事件"
+    IDS_WAVEFILE_INFO       "录波文件：%s已经存在！请从新输入录波文件名"
+    IDS_DLG_DEFTITLE        "提示"
+    IDS_FRAME_INFO          "不存在此种数据帧"
+    IDS_SOCKET_ERROR1       "创建套接字失败"
+    IDS_SOCKETEVENT_ERROR   "关联事件内核对象失败"
+    IDS_CONNECT_OK          "装置连接成功"
+    IDS_WAVESET_INFO        "录波文件设置出错"
+    IDS_DEL_WAVEFILE        "您确定彻底删除所有选中的录波文件?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PRJFILE_OVER_NUM    "工程文件数目超过%d个"
+    IDS_PRJFILE_WRITE_FAILE "写工程文件失败"
+    IDS_PRJFILE_BROKEN      "此工程文件不适用于本软件"
+    IDS_PRJFILE_READ_ERROR  "读工程文件失败"
+    IDS_RIGTH_VIEW          "参数/状态信息"
+    IDS_SYN_PARA            "同期参数"
+    IDS_STATUS_INFO         "状态字信息"
+    IDS_PARAM_NAME          "参数名称"
+    IDS_PARAM_VALUE         "参数值"
+    IDS_STATUS_TYPE         "状态类型"
+    IDS_STATUS_NAME         "状态名称"
+    IDS_STATUS_VALUE        "状态值"
+    IDS_START_CYCLE         "起始段采样周波数"
+    IDS_END_CYCLE           "返回段采样周波数"
+    IDS_MAIN_TILE           "同期装置高级软件"
+    IDS_READ_SETPOINT       "读取装置定值"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_IMPORT_SETPOINT     "导入定值文件"
+    IDS_FILEFLAG_ERROR      "文件固化标示为失败"
+    IDS_RUN_WATCH           "运行监视"
+    IDS_PRJFILE_SAVE_ERROR  "工程文件设置出错"
+    IDS_ANG_DIFF2           "角差量"
+    IDS_EXPORT_SETPOINT_EMPTY "定值区无数据，无法进行导出"
+    IDS_DEVS_RESTART_OK     "装置复位成功！"
+    IDS_DEVS_RESTART_ERROR  "装置复位失败，装置控制方式不为遥控！"
+    IDS_PWD_ERROR_INPUT     "密码错误，请重新输入"
+    IDS_OPER_OVERFLAG       "操作数越限"
+    IDS_OPER_TRAN_ERROR     "传输出错"
+    IDS_OPER_DEVS_LOCK      "装置闭锁"
+    IDS_OPER_FORMAT_ERROR   "格式不匹配"
+    IDS_OPER_TIMEOUT        "超时错误"
+    IDS_OPER_WORKMODE       "工作模式下，禁止修改定值，请更改模式后进行修改"
+    IDS_DEVS_RESTART        "装置将自动复位"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_SETPOINT        "系统定值"
+    IDS_READ_SETTING_FAILED "读取定值数据失败"
+    IDS_FILELEN_TOOSHORT    "文件长度应大于70Bytes，解析失败"
+    IDS_RESET_SETTING       "恢复出厂设置成功，装置将自动复位"
+    IDS_RESET_FAILURE       "恢复出厂设置失败"
+    IDS_UNKOWN              "未知"
+    IDS_NONE                "无"
+    IDS_FRE_DIFF            "频差"
+    IDS_VOLTAGE_DIFF        "压差"
+    IDS_CLOCK_COLOR         "表针颜色"
+    IDS_SYS_SIDE            ":系统侧"
+    IDS_INCOMER             ":待并侧"
+    IDS_CHANNAL_NUM         "通道号"
+    IDS_SYS_VOL             "系统侧电压"
+    IDS_INCOMER_VOL         "待并侧电压"
+    IDS_PARALLERL_POINT     "并列点代号"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_FRE             "系统侧频率"
+    IDS_INCOMER_FRE         "待并侧频率"
+    IDS_SLOW                "慢"
+    IDS_FAST                "快"
+    IDS_MORE_CHANALE        "多通道"
+    IDS_CHANNEL             "通道"
+    IDS_NONE_PARALLEL       "无并列点"
+    IDS_ACTION              "动作: "
+    IDS_EXCEPTION           "异常: "
+    IDS_SYN_CHANANL         "同期通道"
+    IDS_DEV_BUSSINESS       "装置忙，请稍后再发遥控命令"
+    IDS_FILE_CRC_ERROR      "录波文件校验出错"
+    IDS_FILELEN_ERROR       "录波文件长度出错[%d] ! "
+    IDS_WAVE_CLCYE_ERROR    "录波总周波数出错[%d] !"
+    IDS_WAVECLC_START_ERROR "录波采样起始段周波数出错[%d] !"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WAVECLC_RETURN_ERROR "录波采样返回段周波数出错[%d] !"
+    IDS_WAVECYC_ALL_ERROR   "录波有效起始段周波数出错[%d] !"
+    IDS_WAVECYC_ALL_ERROR2  "录波有效返回段周波数出错[%d] !"
+    IDS_ANGFRE_ERROR        "角差频率解析失败"
+    IDS_ANGFRE_CHNUM_ERROR  "角频量通道数出错"
+    IDS_ANGFRE_SMP_ERROR    "角频量采样间隔出错"
+    IDS_ANGFRE_SAMP_POINT   "角频量采样点数出错"
+    IDS_SUBITEM_SELE_ERROR  "模拟子项和频率子项必须选上"
+    IDS_PERUNIT_VALUE       "标幺值"
+    IDS_EFFECTIVE_VALUE     "有效值"
+    IDS_SAMPLE_VALUE        "采样值"
+    IDS_SYS_ANGLE_DIFF      "系统侧转角差"
+    IDS_ONLY_SHOW_EFF       "仅显示有效值"
+    IDS_ONLY_SHOW_SAMPLE    "仅显示采样值"
+    IDS_SHOW_ALL            "采样值、有效值均显示"
+    IDS_RETURN_RECORD_TIME  "返回段采样启动时间"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PULSAT_VOL          "脉振电压"
+    IDS_CHANAL_POINT        "此通道每周波采样：%d点"
+    IDS_EXPORT_WAVEDATA     "导出波形数据"
+    IDS_WAVEEVENT_SUBITEM   "录波事件子项"
+    IDS_EVENT_NAME1         "事件名称"
+    IDS_EVENT_TIME          "事件时间"
+    IDS_REMARK              "备注"
+    IDS_EVENT_TYPE1         "事件类型"
+    IDS_NO_REMARK           "无"
+    IDS_WAVE_EVENT          "录波事件"
+    IDS_CONTROL_EVENT       "控制事件"
+    IDS_SVERROR_EVENT       "SV采样事件"
+    IDS_UNKNOWTYPE_EVENT    "未知类型事件"
+    IDS_EVENTSUB_ERROR      "解析事件子项出错"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "New Project(&N)",             IDC_NEW_PROJECT
+        MENUITEM "Open Project(&O)",            IDC_OPEN_PROJECT
+        MENUITEM "Print Setup(&R)...",          ID_FILE_PRINT_SETUP
+        MENUITEM "Print(&P)...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Print Preview(&V)",           ID_FILE_PRINT_PREVIEW
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Event"
+    BEGIN
+        MENUITEM "Show Event",                  ID_SHOW_EVENT
+        MENUITEM "Download Event",              ID_GET_EVENT
+        MENUITEM "Import Event",                ID_IN_EVENT_FILE
+        MENUITEM "Export Evnet",                ID_OUT_EVENT
+    END
+    POPUP "Wave File"
+    BEGIN
+        MENUITEM "Download Wave File",          ID_GET_WARE_FILE
+        MENUITEM "Open Wave File",              ID_OPEN_WARE_FILE
+    END
+    POPUP "Password Mangage"
+    BEGIN
+        MENUITEM "Change Password",             ID_MODIFY_PSW
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Project View",                IDC_PROJECT_WND, CHECKED
+        MENUITEM "Info View",                   IDC_INFO_WND, CHECKED
+        MENUITEM "Toolbar(&T)",                 ID_VIEW_TOOLBAR, CHECKED
+        MENUITEM "Stausbar(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "Set adjust to", CHECKED
+    BEGIN
+        MENUITEM "scale:1",                     ID_MULTI_1
+        MENUITEM "scale:2",                     ID_MULTI_2
+        MENUITEM "scale:4",                     ID_MULTI_4
+        MENUITEM "user defined",                ID_DEFINE_SELF
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "About SID-2FY(&A)...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About "
+FONT 10, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,24,20,20
+    LTEXT           "SID-2FY  Ver 1.14",IDC_STATIC,40,17,99,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008-2020 EP Corporation. All rights reserved.",
+                    IDC_STATIC,40,30,182,20
+    DEFPUSHBUTTON   "OK",IDOK,181,13,50,14,WS_GROUP
+END
+
+IDD_CREATE_PROJECT_DLG DIALOG DISCARDABLE  0, 0, 291, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Project for Device"
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List3",IDC_DEVICE_TYPE,"SysListView32",LVS_SMALLICON | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,22,23,98,132
+    PUSHBUTTON      "Create",IDOK,145,151,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,151,50,14
+    GROUPBOX        "device type",IDC_STATIC,14,9,116,156
+    LTEXT           "communication mode:",IDC_STATIC,133,25,77,8
+    LTEXT           "Project Name:",IDC_STATIC,134,54,55,8
+    EDITTEXT        IDC_PROJECT_NAME,191,52,93,15,ES_AUTOHSCROLL
+    LTEXT           "Position:",IDC_STATIC,135,84,36,8
+    EDITTEXT        IDC_LOCATION,173,81,95,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_PATH_BTN,272,81,10,14
+    CONTROL         "Connect device",IDC_CREATE_LINK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,150,121,72,8
+    COMBOBOX        IDC_LINKTYPE,212,24,72,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CUSTOMIZE_WARE_SET DIALOGEX 0, 0, 289, 227
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting display Wave"
+FONT 12, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "display",IDOK,54,193,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,193,50,14
+    COMBOBOX        IDC_VALUE_TYPE,23,15,81,12,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Tree1",IDC_FILE_DATA,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,20,48,85,120,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "Tree2",IDC_DISPLAY_DATA,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,155,48,85,120,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "info channel of file:",IDC_WARE_FILE_CHANNEL_INFO,20,33,
+                    83,8
+    LTEXT           "info channel of dispay:",IDC_DIS_CHANNEL_INFO,155,33,93,
+                    8
+    PUSHBUTTON      ">>",IDC_ADD_BTN,108,68,45,14
+    PUSHBUTTON      "<<",IDC_SUB_BTN,108,116,45,14
+    PUSHBUTTON      "appointed>>",IDC_APPOINT_ADD_BTN,108,92,45,14
+    PUSHBUTTON      "UP",IDC_MOVE_UP_BTN,249,68,29,14
+    PUSHBUTTON      "DOWN",IDC_MOVE_DOWN_BTN,249,116,29,14
+END
+
+IDD_DEFINE_SCALE DIALOG DISCARDABLE  0, 0, 149, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "custom according to proportion"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,22,37,44,12
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,85,37,44,12
+    COMBOBOX        IDC_COMBO_SCALE,63,13,58,86,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "proportion",IDC_STATIC,17,15,41,8
+END
+
+IDD_DOWNLOAD_WARE_FILE DIALOG DISCARDABLE  0, 0, 374, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Download Wave File"
+FONT 12, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Download",IDOK,221,160,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,160,50,14
+    CONTROL         "List1",IDC_WARE_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,15,10,345,145
+END
+
+IDD_EVENT DIALOG DISCARDABLE  0, 0, 386, 377
+STYLE WS_CHILD
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_EVENT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,63,371,308
+    LTEXT           "Event Type:",IDC_STATIC,12,18,45,8
+    COMBOBOX        IDC_EVENT_COMBO,58,16,94,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Begin Date:",IDC_STATIC,12,33,44,8
+    LTEXT           "End  Date:",IDC_STATIC,144,34,40,8
+    LTEXT           "Name:",IDC_STATIC,160,17,23,8
+    EDITTEXT        IDC_EVENT_NAME_EDIT,185,15,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_SORT_BTN,253,22,43,14
+    CONTROL         "DateTimePicker1",IDC_START_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,58,33,61,12
+    CONTROL         "DateTimePicker2",IDC_END_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,186,32,61,12
+    PUSHBUTTON      "Import Evnet",IDC_INPUT_EVENT,311,32,60,14
+    PUSHBUTTON      "Download Event",IDC_GET_EVENT,311,16,60,14
+    GROUPBOX        "Event Search",IDC_STATIC,7,3,293,42
+    GROUPBOX        "Getting Event",IDC_STATIC,306,3,72,45,BS_CENTER
+END
+
+IDD_FILE_INFO_DLG DIALOG DISCARDABLE  0, 0, 314, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,255,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,255,165,50,14
+    LTEXT           "file path:",IDC_STATIC,10,14,41,8
+    EDITTEXT        IDC_FOLDER_PATH,65,10,170,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Browse",IDC_SORT_FOLDER_BTN,245,10,30,14,WS_DISABLED
+    CONTROL         "List1",IDC_FILE_LIST,"SysListView32",LVS_SMALLICON | 
+                    WS_BORDER | WS_TABSTOP,10,40,270,85
+    LTEXT           "file name:",IDC_STATIC,15,145,46,8
+    LTEXT           "",IDC_FILE_HEAD,46,146,79,8
+    EDITTEXT        IDC_FILE_NAME,130,141,26,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_FILE_TAIL,160,146,85,8
+    LTEXT           "file type:",IDC_STATIC,15,165,41,8
+    COMBOBOX        IDC_FILE_TYPE,70,162,110,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FORMVIEW DIALOG DISCARDABLE  0, 0, 561, 401
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,35,65,485,285
+END
+
+IDD_INFO_DLG DIALOG DISCARDABLE  0, 0, 239, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cover",IDYES,15,65,50,14
+    PUSHBUTTON      "Save as",IDNO,95,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,65,50,14
+    LTEXT           " this wave file is existent, Do you Show cover file?",
+                    IDC_INFO,16,19,209,20
+END
+
+IDD_IP_SET DIALOG DISCARDABLE  0, 0, 146, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting IP Adress"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,20,47,44,13
+    PUSHBUTTON      "Cancel",IDCANCEL,84,47,42,13
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,
+                    23,19,100,14
+END
+
+IDD_MODIFY_PSW DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Password"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,73,50,14
+    RTEXT           "Old password:",IDC_STATIC,20,16,56,13
+    RTEXT           "New password:",IDC_STATIC,25,31,51,13
+    RTEXT           "Confirm password:",IDC_STATIC,10,48,66,10
+    EDITTEXT        IDC_ORIGINAL_PSW,78,15,68,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODIFY_PSW,78,30,68,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODIFY_CONFIRM,78,45,68,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_PARA_VIEW DIALOG DISCARDABLE  0, 0, 395, 341
+STYLE WS_CHILD
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_PARA_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,56,381,278
+    PUSHBUTTON      "Setting Value",IDC_SET_PARA_BTN,261,11,70,14
+    LTEXT           "type",IDC_STATIC,36,40,17,8
+    COMBOBOX        IDC_PARA_TYPE,60,38,101,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Channel No.",IDC_STATIC,11,13,46,8
+    COMBOBOX        IDC_PARA_AREA,60,12,101,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Import Param",IDC_READ_PARA_FILE,179,37,70,14
+    PUSHBUTTON      "Read Param",IDC_READ_PARA,179,11,70,14
+    PUSHBUTTON      "Restore Factory Settings",IDC_DEVICE_RESET,262,36,98,14
+END
+
+IDD_PASSWORD DIALOG DISCARDABLE  0, 0, 164, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input password"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,47,50,14
+    EDITTEXT        IDC_PSW,66,19,62,12,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "Input password:",IDC_STATIC,7,21,57,11
+END
+
+IDD_PRINT_SET DIALOG DISCARDABLE  0, 0, 297, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "print setup"
+FONT 12, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,76,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,176,194,50,14
+    LTEXT           "begin print time[ms]:",IDC_STATIC,124,66,85,8
+    PUSHBUTTON      "channel selection",IDC_PRINT_CHANNEL_BTN,24,14,68,14
+    LTEXT           "end print time[ms]:",IDC_STATIC,131,89,79,8
+    LTEXT           "mearsure_value time[ms]:",IDC_STATIC,115,112,99,8
+    CONTROL         "describe of wave",IDC_FILE_INFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,128,146,74,10
+    GROUPBOX        "extra message",IDC_STATIC,120,131,156,48
+    CONTROL         "channel info ",IDC_CHANNEL_INFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,212,146,56,10
+    CONTROL         "protected para info",IDC_PARA_IFNO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,124,163,90,10
+    EDITTEXT        IDC_START_TIME,219,63,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_END_TIME,219,87,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_TEST_TIME,219,111,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PRINT_CHANNEL,25,40,79,142,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "draw type:",IDC_STATIC,168,20,41,8
+    COMBOBOX        IDC_DRAW_STYLE_COMBO,219,19,48,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "color of print:",IDC_STATIC,150,43,63,8
+    COMBOBOX        IDC_COLOR_STYLE,219,41,48,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "page num",IDC_PAGE_NUM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,163,44,10
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 234, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Download event"
+FONT 10, "System"
+BEGIN
+    LTEXT           "type:",IDC_TYPE_INFO,20,15,163,8
+    CONTROL         "Progress1",IDC_EVENT_PROGRESS,"msctls_progress32",
+                    PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,20,40,195,14
+END
+
+IDD_REAL_DATA_VIEW DIALOG DISCARDABLE  0, 0, 389, 348
+STYLE WS_CHILD
+FONT 12, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_REAL_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,25,375,316
+    LTEXT           "measure type:",IDC_STATIC,15,12,41,8
+    COMBOBOX        IDC_REAL_DATA_TYPE,61,10,89,38,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SET_PROJECT_DLG DIALOG DISCARDABLE  0, 0, 259, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "setting project"
+FONT 12, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,125,50,14
+    LTEXT           "project name:",IDC_STATIC,23,15,57,8
+    EDITTEXT        IDC_PROJECT_NAME,87,12,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "device type:",IDC_STATIC,28,43,52,8
+    EDITTEXT        IDC_PROJECT_TYPE,87,40,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Access File:",IDC_STATIC,16,69,64,8
+    EDITTEXT        IDC_DB_FILENAME,87,67,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "IP Adress:",IDC_STATIC,41,93,42,8
+    COMBOBOX        IDC_COMBO_LINK,87,91,55,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_UNITE_CURVE DIALOG DISCARDABLE  0, 0, 210, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "select mergering wave file"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "merge",IDOK,34,94,50,14
+    PUSHBUTTON      "cancel",IDCANCEL,127,94,50,14
+    CONTROL         "List1",IDC_CURVE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,
+                    7,29,196,61
+    LTEXT           "mergering wave file:",IDC_STATIC,7,7,81,8
+    EDITTEXT        IDC_FILE_UNITED,7,16,154,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "system default",IDC_AUTO_SELECT,166,15,37,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_CREATE_PROJECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 284
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_CUSTOMIZE_WARE_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_DEFINE_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_DOWNLOAD_WARE_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_EVENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_FILE_INFO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 554
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDD_INFO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_IP_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+        HORZGUIDE, 47
+    END
+
+    IDD_MODIFY_PSW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PARA_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_PRINT_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_REAL_DATA_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 341
+    END
+
+    IDD_SET_PROJECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_UNITE_CURVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SID_2FY\nNo Project\nMy40Bs\n\n\nMySID_2FY.Document\nMy40Bs Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Upper Monitor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAPS"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "New File \nNew File "
+    ID_FILE_OPEN            "Open File\nOpen File"
+    ID_FILE_CLOSE           "Close File\nClose File"
+    ID_FILE_SAVE            "Save File\nSave File"
+    ID_FILE_SAVE_AS         "Save as File\nSave as File"
+    ID_FILE_PAGE_SETUP      "Setting Printing Page\nSetting Printing Page"
+    ID_FILE_PRINT_SETUP     "Setting Printing Option\nSetting Printing Option"
+    ID_FILE_PRINT           "Print File \nPrint"
+    ID_FILE_PRINT_PREVIEW   "Print Preview\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "Exit\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open the file"
+    ID_FILE_MRU_FILE2       "Open the file"
+    ID_FILE_MRU_FILE3       "Open the file"
+    ID_FILE_MRU_FILE4       "Open the file"
+    ID_FILE_MRU_FILE5       "Open the file"
+    ID_FILE_MRU_FILE6       "Open the file"
+    ID_FILE_MRU_FILE7       "Open the file"
+    ID_FILE_MRU_FILE8       "Open the file"
+    ID_FILE_MRU_FILE9       "Open the file"
+    ID_FILE_MRU_FILE10      "Open the file"
+    ID_FILE_MRU_FILE11      "Open the file"
+    ID_FILE_MRU_FILE12      "Open the file"
+    ID_FILE_MRU_FILE13      "Open the file"
+    ID_FILE_MRU_FILE14      "Open the file"
+    ID_FILE_MRU_FILE15      "Open the file"
+    ID_FILE_MRU_FILE16      "Open the file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Next Pane\n Next Pane"
+    ID_PREV_PANE            "Previous Pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Separate Wnd\nSeparate Wnd"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Delete selected Object\n Delete"
+    ID_EDIT_CLEAR_ALL       "Clear All\n Clear All"
+    ID_EDIT_COPY            "Copy\nCopy"
+    ID_EDIT_CUT             "Cut\nCut"
+    ID_EDIT_FIND            "Find\n Find"
+    ID_EDIT_PASTE           "Paste\nPaste"
+    ID_EDIT_REPEAT          "Repeate\nRepeate "
+    ID_EDIT_REPLACE         "Replace\nReplace"
+    ID_EDIT_SELECT_ALL      "Select all\n Select all"
+    ID_EDIT_UNDO            "Undo\nUndo"
+    ID_EDIT_REDO            "Redo\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show Or Hide ToolBar&Show Or Hide ToolBar"
+    ID_VIEW_STATUS_BAR      "Show Or Hide Status ToolBar&Show Or Hide Status ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change size of window"
+    AFX_IDS_SCMOVE          "Change position of window"
+    AFX_IDS_SCMINIMIZE      "minimize"
+    AFX_IDS_SCMAXIMIZE      "maximize"
+    AFX_IDS_SCNEXTWINDOW    "Changing-over Next Window"
+    AFX_IDS_SCPREVWINDOW    "Changing-over Previous Window"
+    AFX_IDS_SCCLOSE         "Close Active Window ,Prelease Save All document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore normal size"
+    AFX_IDS_SCTASKLIST      "Activate task list"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview\n Cancel preview"
+    IDS_INDICATOR_TIME      "Time Diff"
+    IDS_INDICATOR_H_BIGGER  "horizontal zoom in:pageUp"
+    IDS_INDICATOR_SMALLER   "horizontal zoom out:pageDown"
+    IDS_SUB_TIME            "Time Info"
+    IDS_ERROR_OLE           "OLE initialization  fail"
+    IDS_ERROR_PWDFILE       "password file: %s open failure"
+    IDS_STRING_PWDW         "the file%s\r\n is not password file，\r\n so get password failual, the application soft does not run\r\npropose：\r\n\t1. the application move to other directory\r\n\t2. remove file：%s （if this file is not important）"
+    IDS_STRING_PWDCF        "create password file fauilure！"
+    IDS_WRITE_PWDF          "Write to password file unsuccessfully!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GET_EVENT            "Download Event\nDownload Event"
+    ID_GET_WARE_FILE        "Download Ware File\nDownload Ware File"
+    IDC_NEW_PROJECT         "New Project\nNew Project"
+    IDC_PROJECT_WND         "Show Or Hide Project View\nShow Or Hide Project View"
+    IDC_INFO_WND            "Show Or Hide Information View\n Show Or Hide Information View"
+    ID_CURVE_H_BIGGER       "horizontal zoom in \n horizontal zoom in"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CURVE_H_SMALLER      "horizontal zoom out \n horizontal zoom out"
+    ID_CURVE_V_BIGGER       "vertically zoom in \n vertically zoom in"
+    ID_CURVE_V_SMALLER      "vertically zoom out \n vertically zoom out"
+    ID_OPEN_FILE            "Open File\nOpen File"
+    IDM_PRINT               "Print\nPrint"
+    ID_VIEW_WARE_TOOL_BAR   "Show Or Hide Zoom ToolBar&Show Or Hide Zoom ToolBar"
+    IDC_RESTART             "Device reset\nDevice reset"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_START_SYNC          "start synchronion\nstart synchronion "
+    IDC_STOP_SYNC           "emergency termination synchronion\nemergency termination synchronion"
+    IDM_RIGHT_BAR           "Show Or Hide set point View\n Show Or Hide set point View"
+    ID_CONNECT              "connecting device\nconnecting device"
+    ID_DISCONNECT           "disconnecting device \ndisconnecting device"
+    IDM_UPDATE_PARA         "update syschronion parameter\nupdate syschronion parameter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_FILENAME        "file name"
+    IDS_STR_FILESRC         "file source"
+    IDS_RECORDTYPE          "wave type"
+    IDS_SIMPLE_CYCLE        "sample cycle"
+    IDS_FIRST_SAMTIME       "first point time"
+    IDS_RECORD_TIME         "record start time"
+    IDS_STR_WAVECURVE       "wave curve"
+    IDS_PAGE_INFO           "%d page/total %d page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CURVE_SET           "display curve setting"
+    IDS_DIS_COLOUR          "display muliticoulor"
+    IDS_DIS_BACKWRITHE      "display back and white"
+    IDS_ANGULAR_DIF         "angular phase difference"
+    IDS_STR_OK              "OK"
+    IDS_STR_CANCEL          "Cancel"
+    IDS_STR_RETRY           "retry"
+    IDS_STR_ABORT           "Stop"
+    IDS_STR_IGNORE          "ignore"
+    IDS_STR_YES             "yes"
+    IDS_STR_NO              "no"
+    IDS_STR_SCHEME          "scheme"
+    IDS_STR_VERSION         "version"
+    IDS_STR_LINE            "line"
+    IDS_BOTTOM_FIRST_F2     "wave file info:\r\nfile source:%s\r\nwave type:%s\r\nsample cycle:%.1f\r\nfirst point time:%s.%d\r\nstart time:%s.%d\r\nreturn time:%s.%d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DELFILE_ERROR       "delete wave file unsuccessfully."
+    IDS_DELWAVE_INFO2       "do you sure delete selected ware  from project list?"
+    IDS_WAREFILE_INFO3      "length of the wave file is too long. "
+    IDS_WAREFILE_INFO4      "wave file is non-existent, system will delete the file from project."
+    IDS_OPEN_WAVEF          "it is possable other application using the wave file, so open file unsuccessfully."
+    IDS_SPLIT_ERROR         "the wave file is parsed unsuccessfully, may be the file is broken."
+    IDS_FILE_BROKEN         "the file is broken, open unsuccessfully."
+    IDS_SEL_UNITFILE        "please choose the wave file that is used unite."
+    IDS_STR_UNITEERROR      "the wave files is united unsuccessfully."
+    IDS_STR_UNITS           "the wave files is united successfully."
+    IDS_STR_FILEEX          "the wave file is arleay exist."
+    IDS_STR_OPENE           "open the wave file unsuccessfully."
+    IDS_STR_CPE             "the wave file is copyed to project directory unsuccessfully."
+    IDS_STR_DEVICENS        "application does not support the type of device."
+    IDS_STR_PRJINFO         "please open or create project, open wave file is forbided when has not project."
+    IDS_MAX_FILENUM         "the max number of wave file is %d, project has %d, please delete  unimportant wave file before open wave file. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ANALYSE_INFO        "the file has not info of analyse, so not need analyse."
+    IDS_OPENFILE_INFO       "project has the wave file, so do not need to open."
+    IDS_EXPORTPARA_INFO     "export protected para to excel file unsuccessfully."
+    IDS_EXPORTPARA          "export parameter"
+    IDS_EXPORTCHANALE       "export channel info"
+    IDS_EXPORTDATA_INFO     "export real-time measure data to excel unsuccessfully."
+    IDS_EXPORTDATA          "export real-time data"
+    IDS_EXPORTDATA_INFO2    "it is already exported real-time data to excel file %s."
+    IDS_EXPORTCOMTRADE_ERROR "export comtrade file unsuccessfully."
+    IDS_EXPORTCOMTRADE_INFO "export comtrade file successfully."
+    IDS_PWDC_INFO           "password change successfully."
+    IDS_PWDC_ERROR          "password change unsuccessfully."
+    IDS_PWD_INFO2           "password can not be NULL"
+    IDS_PWD_ERROR           "password is wrong. "
+    IDS_PWDC_INFO3          "it is different betweent input new password frist and second, please input again."
+    IDS_PWDC_OLDW           "input old password is wrong. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OPENFILE_ERROR      "open file failed"
+    IDS_CHANGEAREA_ERROR    "change area of set point unsuccessfully. "
+    IDS_SETPARA_ERROR       "modify set point unsuccessfully."
+    IDS_SETPARA_OK          "modify set point successfully, do you want to solidify?"
+    IDS_SOLIDIFY_INFO       "solidify set point failed, it is possible time  difference bewteen modifying and solidifing is larger than 5 second."
+    IDS_SOLIDIFY_OK         "it is successful to solidify set point!"
+    IDS_DATABASE_CONNECT    "create database connection failed."
+    IDS_DATABASE_CREATE     "create database for storing event failed."
+    IDS_PRJCREATE_ERROR     "create project failed."
+    IDS_WAVEFILE_BROKEN     "the wave file is broken."
+    IDS_FILENAME_LENG       " length of  wave file name is too long, open failed. "
+    IDS_PRJFILE_ERROR       "open project file failed."
+    IDS_ADDFILE_PRJ         "add wave file to project directory failed."
+    IDS_WRITEFILE_ERROR     "write to file failed, it is may be disk space is not enough."
+    IDS_DELFILE_ERROR2      "delete file failed, it is possible other application using the file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONNECT_ERROR       "connect device failed."
+    IDS_DELDIRECTORY_ERROR  "delete directory failed."
+    IDS_WAREFILE_INFO       "project directory of wave has not this wave file, please copy this file to project directory of wave."
+    IDS_TYPEDEVICE_UNKNOW   "unknow type of device. "
+    IDS_TYPEDEVICE_INFO2    "the application can not provide server for %s type of device."
+    IDS_TYPEDEVICE_ERROR    "it is matchting  project type %s and device type %s."
+    IDS_ANALYSZFILE_ERROR   "file conent analyze failed."
+    IDS_UNITEWAVE_INFO      "the wave file is united."
+    IDS_UNITEWAVE_INFO2     "has not  suitably wave file."
+    IDS_CREATEFILE_ERROR    "create file failed."
+    IDS_WRITEEFILE_ERROR    "write to wave file failed."
+    IDS_MEMORY_ERROR        "memory not enough to allocate."
+    IDS_ANALOG_ERROR        "analog of wave file analyzed failed."
+    IDS_DIGIT_ERROR         "digit of wave file analyzed failed."
+    IDS_PROTECTED_ERROR     "protected of wave file anlayzed failed."
+    IDS_CREATE_CONFIG       "create config file failed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CREATEBASE_FILE     "create database file failed."
+    IDS_EVENT_INFO          "Event Info"
+    IDS_REAL_PARA           "Real-time Data"
+    IDS_WAVE_FILE           "Wave File"
+    IDS_PROTECT_PARA        "Set Point"
+    IDS_EXPORT_PARA         "export set point"
+    IDS_EXPORT_WAVEPARA     "export set point"
+    IDS_EXPORT_CHANALINFO   "export channel info"
+    IDS_PRJ_SETTING         "project setting"
+    IDS_TEST_CONNECT        "connect  device for a test"
+    IDS_PRJINFO             "project info"
+    IDS_BOTTOM_TITLE        "file data info"
+    IDS_CHANEL_INFO         "channel info"
+    IDS_EXPORTCHANEL_OK     "it is successful to export channel info to the file %s. "
+    IDS_PARA_INFO           "set point:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PRO_INFO            "Set point"
+    IDS_CHANNEL_NAME        "channel name"
+    IDS_CHANNEL_TYPE        "channel type"
+    IDS_STR_CYCLE           "cycle"
+    IDS_POINT_CYCLE         "points in cycle"
+    IDS_PARA_TPYEANDINFO    "set point type and info"
+    IDS_PARA_NAME           "set point name"
+    IDS_PARA_VALUE          "set point value"
+    IDS_SHOW_WAVE           "show waveform"
+    IDS_WAVE_ANALYSE        "waveform analysis"
+    IDS_WAVE_UNITE          "waveform synthesis"
+    IDS_EXPORT_COMTRADE     "translate comtrade file"
+    IDS_DEL_LIST            "out  file from list"
+    IDS_DEL_DISK            "delete file from disk"
+    IDS_BOTTOM_FIRST        "wave file info:\r\nfile source:%s\r\nwave type:%s\r\nsample cycle:%d\r\nfirst point time:%s.%d\r\nstart time:%s.%d"
+    IDS_ARARE_WAVE          "the area num is %d when recording wave file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_COVER           "File already exists, overwrite?"
+    IDS_STRING_TYPE         "type"
+    IDS_ANG_CYSPOINT_ERROR  "Points sampled of cycle analog channel errors (%d)  !"
+    IDS_ANG_STARTPOINT_ERROR 
+                            "Points sampled of start-up period analog channel errors (%d)  !"
+    IDS_ANG_AFTERPOINT_ERROR 
+                            "Points sampled of return period analog channel errors (%d)  !"
+    IDS_ANG_TIMEDIFF_ERROR  "Analog sampling interval of all period error [%d] !"
+    IDS_ANG_ALLSTARTPOINT_ERROR 
+                            "Points sampled of valid start-up period analog channel errors (%d)  !"
+    IDS_ANG_ALLAFTERPOINT_ERROR 
+                            "Points sampled of valid return period analog channel errors (%d)  !"
+    IDS_ANG_APPOINTNUM_ERROR 
+                            "Specigy the number of ananlog channel error [%d] !"
+    IDS_ANG_SUBLEN_ERROR    "length of analog subitem  errors ! targer the length：%d，now the length：%d"
+    IDS_ANG_CHNUM_ERROR     "ERROR! channel num %d, but fact channel num：%d"
+    IDS_ERROR_CALDIFF       "Calculate the Angle difference to fail  "
+    IDS_NETWORK_CONN        "Network Connection"
+    IDS_USB_CONN            "USB Connection"
+    IDS_DVI_CONNECT_ERROR   "SID-DVI  only support USB connection, pelase select 'usb connection' "
+    IDS_BEGINTIME_MAX       "Start time should be less than 60800"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_OPENWAVE      "open wave file unsuccessfully!"
+    IDS_ERROR_WRITEWF       "write wave file unsuccessfully!"
+    IDS_OK_WRITEVALUE       "modify  value successfully!"
+    IDS_CREATE_INFO         "please input project name or project path!"
+    IDS_PRJNAME_ERROR       "prject name can not include:\r\n\\/:*?\\""<>|"
+    IDS_CREATE_IP           "please input IP of device!"
+    IDS_DRAW_WAY1           "longitudinally print"
+    IDS_DRAW_WAY2           "crossrange print"
+    IDS_DRAW_COLOUR1        "black-and-white print"
+    IDS_DRAW_COLOUR2        "multicolour print"
+    IDS_DRAW_START          "start time line must in print range!"
+    IDS_PRINT_INFO          "please print wave parameter at first!"
+    IDS_SEL_VALUETYPE       "please choose value type!"
+    IDS_SEL_CHANNAL         "please choose channels for showing"
+    IDS_GET_WAVEF           "get wave data unsuccessuflly!"
+    IDS_NAME_DIFF           "if channel type is different, then channel name must different!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_ANALOG          "analog"
+    IDS_DIGITAL_INPUT       "digital input"
+    IDS_DIGITAL_OUTPUT      "digital output"
+    IDS_FILEUSED_INFO       "file name is %s, that is using by other application now, can not replace."
+    IDS_ADD_FAIL            "add %s failed"
+    IDS_EXPORTPARA_OK       "it is successful to export set point to %s file."
+    IDS_EXPORTCOMTR_INFO    "Comtrade File(Input Comtrade folder name)|*||"
+    IDS_ONE_VALUE           "primary value"
+    IDS_TWICE_VALUE         "secondary value"
+    IDS_PRINT_TITLE         "print wave setting"
+    IDS_PRINT_CHANNELIFNO   "print channel info"
+    IDS_SET                 "Set"
+    IDS_BOTTOM_FIRSTNOCRC   "wave file info:\r\nfile source:%s\r\nstructure verion:%d\r\nscheme:%d\r\ndevice version: %s \r\nwave type:%s\r\nsample cycle:%d\r\nfirst point time:%s.%d\r\nstart time:%s.%d"
+    IDS_HAS_NONFILE         "device has any wave file  "
+    IDS_ALL_TYPE            "all type"
+    IDS_SERIAL              "serial"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EVENT_NAME          "name"
+    IDS_EVENT_TYPE          "type"
+    IDS_TIME_HAPPEN         "happen time"
+    IDS_EVENT_PARA          "parameter"
+    IDS_DOWN_NOW            "downing now:%s"
+    IDS_EXPORT_EVENT        "export event"
+    IDS_DEL_EVENT           "delete selected event"
+    IDS_DEL_ALL             "delete all event"
+    IDS_SAVE_FILE           "the wave file name will be %s, do you sure save?"
+    IDS_SET_AREA            "do you sure set current num %d ?"
+    IDS_PARA_SERIAL         "ID (R)"
+    IDS_PARA_TYPE           "Set point type(R)"
+    IDS_PARA_DATA           "Set point value(R/w)"
+    IDS_PARA_RANGE          "Set point value range(R)"
+    IDS_DATA_RANGE          "Ralue range"
+    IDS_OVERRANGE_INFO      "please input value bewteen %.3lf and %.3lf,  %.3lf bound violation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FREQUENCY           "Frequency"
+    IDS_ANG_DIFF            "Angle difference"
+    IDS_PRJ_DIR             "project path"
+    IDS_PATH_INFO           """ is already exist, please change prject name or modiy project directory"
+    IDS_UNKOWN_TYPE         "unkown  the name of device is %s "
+    IDS_MAXDOWN_FILENUM     "the max number of wave file is %d in project, project has %d, please delete  unimportant wave file before download wave file. "
+    IDS_REAL_DATANAME       "real-time data name"
+    IDS_REAL_DATATYPE       "real-time data type"
+    IDS_MEASRUE_VALUE       "measrue value"
+    IDS_EXPAND_VALUE        "expand value"
+    IDS_RECOVE_FILEINFO     "the file %s is exist, do you cover it?"
+    IDS_FILE_EXIST          "comtrade file: %s is exist."
+    IDS_MERAGE_FILE         "merge file"
+    IDS_STR_NAME            "name"
+    IDS_PER_UNIT            "per unit"
+    IDS_STR_TIME            "time"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENDTIME_MIN         "End time should be more than 60800"
+    IDS_CHANNAL_SHOW_ERROR  "Channel dipaly an error"
+    IDS_CHANAL_NOEXIST      "the channel %d, Specified channel NO.%d was not found"
+    IDS_DIGITAL_CHNUM_ERROR "Digital channel number error [%d] !"
+    IDS_DIGIT_CYSPOINT_ERROR 
+                            "Points sampled of cycle digital channel errors (%d)  !"
+    IDS_DIGIT_STARTPOINT_ERROR 
+                            "Points sampled of start-up period digial channel errors (%d)  !"
+    IDS_DIGIT_AFTERPOINT_ERROR 
+                            "Points sampled of return period analog channel errors (%d)  !"
+    IDS_DIGIT_TIMEDIFF_ERROR 
+                            "Digital sampling interval of all period error [%d] !"
+    IDS_DIGIT_ALLSTARTPOINT_ERROR 
+                            "Points sampled of valid start-up period digital channel errors (%d)  !"
+    IDS_DIGIT_ALLAFTERPOINT_ERROR 
+                            "Points sampled of valid return period digital channel errors (%d)  !"
+    IDS_DIGIT_APPOINTNUM_ERROR 
+                            "Specigy the number of digital channel error [%d] !"
+    IDS_CANCEL_SAVE         "The user to cancel the save"
+    IDS_CREATE_WAVE_ERROR   "Failed to create wave record file"
+    IDS_DOWN_FILE_ERROR3    "Download failed"
+    IDS_FILE_BROKEN2        "File damaged"
+    IDS_SET_PRI_ERROR       "Failed to set the thread priority"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOT_SHOWCHANANL     "please choose channels that do not show!"
+    IDS_SEL_UPCHANANL       "please choose channels for shifting up\n"
+    IDS_UPCHANANL           "channel for shifting up , can not select channel type."
+    IDS_UP_INFO             "channel %s is first, can not move up."
+    IDS_MOVE_CHANANLINFO    "wave analyse, can not move appoint channels."
+    IDS_MOVE_INFO2          "channel '%s' last one is appointting channels, so this can not move up."
+    IDS_MOVE_DOWNINFO       "please choose channels that move down"
+    IDS_MOVEDOWN_ERROR      "channels for shifting up , can not select channel type."
+    IDS_ERROR_CHANANL       "channel is not in wave, it may be wave file is wrong."
+    IDS_MOVEDOWN_INFO1      "channel %s is last one, can not move down."
+    IDS_SHOWWAVE_INFO       "wave analyse, must be show appointting chananl"
+    IDS_DOWNFILE_ERROR1     "download summary wave file unsuccessfully. "
+    IDS_DOWNFILE_ERROR2     "download wave file unsuccessfully."
+    IDS_DOWNFILE_INFO1      "download file over, For further details, please look up list."
+    IDS_ADDEVENT_ERROR      "add event unsuccessfully"
+    IDS_OPEN_DATAF          "open data record unsuccessfully"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WAVEDATA_INFO       "wave data record has been delete."
+    IDS_DELEEVENT_INFO      "do you sure delete selected event?"
+    IDS_STR_TITLE           "confirm box"
+    IDS_EPORTEVENT_ERROR    "export event to excel file unsuccessfully."
+    IDS_EVENT_TITLE         "export event "
+    IDS_EXPORTEVENT_FINISH  "event export to %s file that arleay finish."
+    IDS_DELEEVENT_INFO2     "do you sure delete all event?"
+    IDS_DELEEVENT_INFO3     "deleting event now:"
+    IDS_WAVEFILE_INFO       "wave file: %s exist, please input wave file name agin."
+    IDS_DLG_DEFTITLE        "prompt message"
+    IDS_FRAME_INFO          "format of data frame is wrong."
+    IDS_SOCKET_ERROR1       "create socket unsuccessfully."
+    IDS_SOCKETEVENT_ERROR   "event core object be related "
+    IDS_CONNECT_OK          "connect device successfully."
+    IDS_WAVESET_INFO        "setting of wave file is wrong. "
+    IDS_DEL_WAVEFILE        "do you sure delete selected wave file?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PRJFILE_OVER_NUM    "Engineering document number more than %d"
+    IDS_PRJFILE_WRITE_FAILE "Write engineering file failed"
+    IDS_PRJFILE_BROKEN      "The software can't open this project"
+    IDS_PRJFILE_READ_ERROR  "Read engineering file failed"
+    IDS_RIGTH_VIEW          "Param/Status"
+    IDS_SYN_PARA            "Synchronizer Param"
+    IDS_STATUS_INFO         "Staus Info"
+    IDS_PARAM_NAME          "Param Name"
+    IDS_PARAM_VALUE         "Param Value"
+    IDS_STATUS_TYPE         "Status Type"
+    IDS_STATUS_NAME         "Status Name"
+    IDS_STATUS_VALUE        "Status Value"
+    IDS_START_CYCLE         "Starting period of cycle number"
+    IDS_END_CYCLE           "Return period of cycle number"
+    IDS_MAIN_TILE           "senior Sofware for Synchronizer Device"
+    IDS_READ_SETPOINT       "Read Param"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_IMPORT_SETPOINT     "Import Param"
+    IDS_FILEFLAG_ERROR      "Flag of file curing is wrong"
+    IDS_RUN_WATCH           "Running Watch"
+    IDS_PRJFILE_SAVE_ERROR  "Project file save failed"
+    IDS_ANG_DIFF2           "Angle difference"
+    IDS_EXPORT_SETPOINT_EMPTY "No data,  Export failure"
+    IDS_DEVS_RESTART_OK     "Device restart successfully!"
+    IDS_DEVS_RESTART_ERROR  "Device restart failed, Control mode is not remote control"
+    IDS_PWD_ERROR_INPUT     "Wrong password, please enter again"
+    IDS_OPER_OVERFLAG       "Value overflow"
+    IDS_OPER_TRAN_ERROR     "Transmission errors"
+    IDS_OPER_DEVS_LOCK      "Device Locked"
+    IDS_OPER_FORMAT_ERROR   "Format does not match"
+    IDS_OPER_TIMEOUT        "Time Out"
+    IDS_OPER_WORKMODE       "forbid setting value while device in working mode"
+    IDS_DEVS_RESTART        "Device will automatically restart."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_SETPOINT        "System Set Point"
+    IDS_READ_SETTING_FAILED "Read setting data failed"
+    IDS_FILELEN_TOOSHORT    "File size is less than 70 bytes, parse failure"
+    IDS_RESET_SETTING       " Successful restore the factory Settings, Device will automatically restart."
+    IDS_RESET_FAILURE       "Failed to restore factory Settings"
+    IDS_UNKOWN              "Unknown"
+    IDS_NONE                "None"
+    IDS_FRE_DIFF            "Frequency offset"
+    IDS_VOLTAGE_DIFF        "Voltage diff."
+    IDS_CLOCK_COLOR         "color:"
+    IDS_SYS_SIDE            ":Busbar"
+    IDS_INCOMER             ":Incomer"
+    IDS_CHANNAL_NUM         "Chananel number"
+    IDS_SYS_VOL             "System Voltage"
+    IDS_INCOMER_VOL         "incomer Voltage"
+    IDS_PARALLERL_POINT     "point code"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYS_FRE             "System Freq."
+    IDS_INCOMER_FRE         "Incomer Freq."
+    IDS_SLOW                "Slow"
+    IDS_FAST                "Fast"
+    IDS_MORE_CHANALE        "Multichannel"
+    IDS_CHANNEL             "Channel"
+    IDS_NONE_PARALLEL       "None parallel point"
+    IDS_ACTION              "Action:  "
+    IDS_EXCEPTION           "Exception: "
+    IDS_SYN_CHANANL         "Sync. Channal"
+    IDS_DEV_BUSSINESS       "Device is busy, please later send remote commands"
+    IDS_FILE_CRC_ERROR      "Wave record file check failed"
+    IDS_FILELEN_ERROR       "wave record file length error[%d] ! "
+    IDS_WAVE_CLCYE_ERROR    "Wave cycles is error [%d] !"
+    IDS_WAVECLC_START_ERROR "Wave record start samping period of cycle for errors [%d] "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WAVECLC_RETURN_ERROR 
+                            "Wave record return samping period of cycle for errors [%d] "
+    IDS_WAVECYC_ALL_ERROR   "The whole effective wave record start samping period of cycle for errors [%d] "
+    IDS_WAVECYC_ALL_ERROR2  "The whole effective wave record return samping period of cycle for errors [%d] "
+    IDS_ANGFRE_ERROR        "Angle difference or frequency parse failure"
+    IDS_ANGFRE_CHNUM_ERROR  "channul number error"
+    IDS_ANGFRE_SMP_ERROR    "Sampling interval error "
+    IDS_ANGFRE_SAMP_POINT   "Sampling points error "
+    IDS_SUBITEM_SELE_ERROR  "Aangle items and frequency items must be checked"
+    IDS_PERUNIT_VALUE       "Per-unit"
+    IDS_EFFECTIVE_VALUE     "Effev"
+    IDS_SAMPLE_VALUE        "Sample"
+    IDS_SYS_ANGLE_DIFF      "Turn Ang.diff"
+    IDS_ONLY_SHOW_EFF       "Only Show Effective Value"
+    IDS_ONLY_SHOW_SAMPLE    "Only show samping value"
+    IDS_SHOW_ALL            "Show all value"
+    IDS_RETURN_RECORD_TIME  "Return time"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PULSAT_VOL          "Pulsating voltage"
+    IDS_CHANAL_POINT        "wave samping points per week: %d"
+    IDS_EXPORT_WAVEDATA     "Export Data Of Wave"
+    IDS_WAVEEVENT_SUBITEM   "weve event subitem"
+    IDS_EVENT_NAME1         "event name"
+    IDS_EVENT_TIME          "event time"
+    IDS_REMARK              "remark"
+    IDS_EVENT_TYPE1         "event type"
+    IDS_NO_REMARK           "no remark"
+    IDS_WAVE_EVENT          "wave event"
+    IDS_CONTROL_EVENT       "control event"
+    IDS_SVERROR_EVENT       "SV  sampling event"
+    IDS_UNKNOWTYPE_EVENT    "unknow type event"
+    IDS_EVENTSUB_ERROR      "read event sub error"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SID_2FY.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
